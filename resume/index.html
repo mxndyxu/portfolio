@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Mandy Xu: Personal site and portfolio</title>
     <h1>Resume</h1>
     <nav> 
         <a href="../" target="_blank">Home</a> 
         <a href="../projects/" target="_blank">Projects</a> 
         <a href="../contact/" target="_blank">Contact</a> 
-        <a href="./" class="active">Resume</a> 
+        <a href="./" class="current">Resume</a> 
     </nav>
 </head>
-<body>
-    <section style="text-align: center;">
-        <h1>Mandy Xu</h1>
+<body class="resume">
+    <section class="resume-header">
+        <h2 class="resume-name">Mandy Xu</h2>
         <p1>
             (123) 456-7890 | 
             max002@ucsd.edu | 
@@ -22,93 +23,93 @@
             <a href="https://github.com/mxndyxu" target="_blank">github.com/mxndyxu</a>
         </p1>
     </section>
+
     <section>
         <h2>Skills</h2>
         <hr>
+        
         <p><strong>Languages: </strong>Python, SQL</p>
         <p><strong>Frameworks & Libraries: </strong>Pandas, NumPy, Matplotlib, Seaborn, PostgreSQL, PySpark, scikit-learn, TensorFlow,
 PyTorch, NetworkX, pytest</p>
         <p><strong>Platforms & Tools: </strong>ETL Pipelines, Apache Airflow, AWS, Docker, Git, APIs, HPC, Jupyter</p>
     </section>
+
     <section>
         <h2>Experience</h2>
         <hr>
-        <table width="100%">
-            <tr>
-                <td><strong>Software Engineer</strong></td>
-                <td align="right">June 2024 – Present</td>
-            </tr>
-        </table>
-        <table width="100%">
-            <tr>
-                <td><i>The Office</i></td>
-                <td align="right">San Diego, CA</td>
-            </tr>
-        </table>
+        <div class="resume-row">
+            <strong>Software Engineer</strong>
+            <span>June 2024 - Present</span>
+        </div>
+
+        <div class="resume-row">
+            <i>The Office</i>
+            <span>Scranton, PA</span>
+        </div>
+
         <ul>
             <li>Developed and maintained internal software systems for Dunder Mifflin, reducing paper-order processing time by 35% across 3 regional branches.</li>
             <li>Automated sales and inventory workflows, eliminating 20+ hours of manual work per week and supporting $2M+ in annual paper sales.</li>
         </ul>
-        <table width="100%">
-            <tr>
-                <td><strong>Software Engineer Intern</strong></td>
-                <td align="right">June 2022 – August 2022</td>
-            </tr>
-        </table>
-        <table width="100%">
-            <tr>
-                <td><i>Parks & Rec</i></td>
-                <td align="right">San Diego, CA</td>
-            </tr>
-        </table>
+
+        <div class="resume-row">
+            <strong>Software Engineer Intern</strong>
+            <span>June 2022 - August 2022</span>
+        </div>
+
+        <div class="resume-row">
+            <i>Parks & Rec</i>
+            <span>Pawnee, IN</span>
+        </div>
+
         <ul>
             <li>Developed civic technology for Pawnee’s Parks Department, automating permit workflows and reducing processing time by 40% across 12 municipal programs.</li>
             <li>Built data pipelines for 8+ community initiatives, improving reporting efficiency by 35% and saving 15+ hours of manual work per week.</li>
         </ul>
     </section>
+
     <section>
         <h2>Education</h2>
         <hr>
-        <table width="100%">
-            <tr>
-                <td><strong>University of California, San Diego</strong></td>
-                <td align="right">September 2025 - Present</td>
-            </tr>
-        </table>
-        <table width="100%">
-            <tr>
-                <td><i>M.S. in Data Science</i></td>
-                <td align="right"><i>La Jolla, CA</i></td>
-            </tr>
-        </table>
-        <br>
-        <table width="100%">
-            <tr>
-                <td><strong>University of California, San Diego</strong></td>
-                <td align="right">September 2020 - June 2024</td>
-            </tr>
-        </table>
-        <table width="100%">
-            <tr>
-                <td><i>B.S. in Data Science, Minor in Cognitive Science</i></td>
-                <td align="right"><i>La Jolla, CA</i></td>
-            </tr>
-        </table>
+
+        <div class="resume-row">
+            <strong>University of California, San Diego</strong>
+            <span>September 2025 - Present</span>
+        </div>
+
+        <div class="resume-row">
+            <i>M.S. in Data Science</i>
+            <span><i>La Jolla, CA</i></span>
+        </div>
+
+        <div class="resume-row">
+            <strong>University of California, San Diego</strong>
+            <span>September 2020 - June 2024</span>
+        </div>
+
+        <div class="resume-row">
+            <i>B.S. in Data Science, Minor in Cognitive Science</i>
+            <span><i>La Jolla, CA</i></span>
+        </div>
     </section>
+
     <section>
         <h2>Projects</h2>
         <hr>
-        <table width="100%">
-            <tr>
-                <td><strong>Data Science Project</strong> | <i>Abbott Elementary</i></td>
-                <td align="right">April 2023 - July 2023</td>
-            </tr>
-        </table>
+
+        <div class="resume-row">
+            <strong>Data Science Project</strong>
+            <span>April 2023 - July 2023</span>
+        </div>
+
+        <div class="resume-row">
+            <i>Abbott Elementary</i>
+        </div>
+
         <ul>
             <li>Built a school operations platform serving 20+ faculty members, automating attendance, scheduling, and classroom resource tracking.</li>
             <li>Developed REST APIs and data pipelines that reduced administrative workload by 30% and supported 500+ student records.</li>
         </ul>
-        <br>
     </section>
 </body>
 </html>
