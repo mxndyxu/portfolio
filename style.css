@@ -2,6 +2,13 @@
     --color-accent: #5d7b3d;
 }
 
+.theme-selector {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+}
+
 body {
   font: 100%/1.5 system-ui; /* Set line height to 1.5x font size and use OS's UI font as website font */
   max-width: 100ch;
@@ -19,6 +26,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
+
   display: flex;
 }
 
@@ -31,7 +40,7 @@ nav a {
   margin-bottom: 25px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: var(--border-color);
   padding-bottom: 0.4em;
 }
 
@@ -76,10 +85,6 @@ button {
 
 .projects h2 {
   margin: 0;
-}
-
-.resume {
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .resume-name {
