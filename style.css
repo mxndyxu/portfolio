@@ -85,6 +85,7 @@ button {
 
 .projects h2 {
   margin: 0;
+  padding-top: 2em;
 }
 
 .resume-name {
@@ -100,6 +101,10 @@ button {
   text-align: right;
 }
 
+.project-year {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 #profile-stats dl {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -111,4 +116,68 @@ button {
 
 #profile-stats dd {
   grid-row: 2;
+}
+
+#projects-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 5em;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  border: 1px solid currentColor;
+  border-radius: 0.5em;
+  padding: 1em 1em;
+  flex: 1;
+}
+
+.swatch {
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 50%;
+}
+
+.legend-elements {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.searchBar {
+  width: 100%;
+  height: 3rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #888;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+}
+
+#projects-plot {
+  path {
+    transition: 300ms;
+    cursor: pointer;
+  }
+
+  &:has(path:hover) {
+    path:not(:hover) {
+      opacity: 0.5;
+    }
+  }
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
 }
