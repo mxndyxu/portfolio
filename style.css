@@ -181,3 +181,66 @@ button {
     fill: var(--color);
   }
 }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.stats dt {
+  grid-row: 1;
+}
+
+.stats dd {
+  grid-row: 2;
+}
+
+.gridlines line {
+  stroke-opacity: 0.2;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  margin: 0;
+  /* position: fixed; */
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background-color: white;
+  border: 1.5px solid;
+  border-radius: 15px;
+  padding: 0.5em;
+}
+
+dl.info dt {
+  font-weight: bold;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+dl#language-breakdown {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
